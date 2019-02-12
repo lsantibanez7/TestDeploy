@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<form action="http://http://52.15.180.249:8080/Deploy/Project1/rest/ManagerHome" method="POST">
+<form action="http://52.15.180.249:8080/Deploy/rest/ManagerHome" method="POST">
 <h1>MANAGER HOME PAGE</h1>
 <h2>Welcome, <%= session.getAttribute("firstname") %></h2>
 <label for="selection">Select what you would like to do</label>
@@ -27,7 +27,7 @@
 <br>
 </form>
 
-<form action = "http://http://52.15.180.249:8080/Deploy/Project1/rest/users" method="POST">
+<form action = "http://52.15.180.249:8080/Deploy/rest/users" method="POST">
 <button>Logout</button>
 </form>
 <div id="demo"></div>
@@ -124,7 +124,7 @@ var x = document.createElement("table");
 	     
 	    }
 	  };
-	  xhttp.open("POST", "http://localhost:8080/Project1/rest/singleempRequest?number=" + document.getElementById("bn").value ,true);
+	  xhttp.open("POST", "http://52.15.180.249:8080/Deploy/rest/singleempRequest?number=" + document.getElementById("bn").value ,true);
 	  xhttp.send("number=" + document.getElementById("bn").value);
 	}
 
@@ -229,7 +229,7 @@ function loadAllPend() {
 	     
 	    }
 	  };
-	  xhttp.open("GET", "http://localhost:8080/Project1/rest/allPendRequest", true);
+	  xhttp.open("GET", "http://52.15.180.249:8080/Deploy/rest/allPendRequest", true);
 	  xhttp.send();
 	}
 	
@@ -322,7 +322,7 @@ function loadAllRes() {
 	     
 	    }
 	  };
-	  xhttp.open("GET", "http://localhost:8080/Project1/rest/allResolvedRequest", true);
+	  xhttp.open("GET", "http://52.15.180.249:8080/Deploy/rest/allResolvedRequest", true);
 	  xhttp.send();
 	}
 	
@@ -415,7 +415,7 @@ function loadAllEmp() {
 	     
 	    }
 	  };
-	  xhttp.open("GET", "http://localhost:8080/Project1/rest/allEmployees", true);
+	  xhttp.open("GET", "http://52.15.180.249:8080/Deploy/rest/allEmployees", true);
 	  xhttp.send();
 }
 

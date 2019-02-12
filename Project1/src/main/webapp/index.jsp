@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<form action="http://http://52.15.180.249:8080/Deploy/Project1/rest/users" method="POST">
+<form action="http://52.15.180.249:8080/Deploy/rest/users" method="POST">
 
 <!-- <script>
 
