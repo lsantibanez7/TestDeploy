@@ -56,7 +56,7 @@ public class LoginServiceImpl implements LoginService{
 			}else {
 				request.getSession().setAttribute("nope", "Does not exist");
 				try {
-					request.getRequestDispatcher("/EmployeeHome.jsp").forward(request, response);
+					request.getRequestDispatcher("/index.jsp").forward(request, response);
 				} catch (ServletException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -68,7 +68,7 @@ public class LoginServiceImpl implements LoginService{
 		}else {
 			request.getSession().setAttribute("nope", "Does not exist");
 			try {
-				request.getRequestDispatcher("/EmployeeHome.jsp").forward(request, response);
+				request.getRequestDispatcher("/index.jsp").forward(request, response);
 			} catch (ServletException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
