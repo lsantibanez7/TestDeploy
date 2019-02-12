@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<form action="http://localhost:8080/Project1/rest/EmployeeHome" method="POST">
+<form action="http://http://52.15.180.249:8080/Deploy/Project1/rest/EmployeeHome" method="POST">
 <h1>EMPLOYEE HOME PAGE</h1>
 <h2>Welcome, <%= session.getAttribute("firstname") %></h2>
 <label for="selection">Select what you would like to do</label>
@@ -27,7 +27,7 @@
 <br>
 
 </form>
-<form action = "http://localhost:8080/Project1/rest/users" method="POST">
+<form action = "http://http://52.15.180.249:8080/Deploy/Project1/rest/users" method="POST">
 <button>Logout</button>
 </form>
 <div id="demo">
